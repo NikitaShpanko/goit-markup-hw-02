@@ -10,7 +10,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  line-height: 1.172;
+  line-height: 1.172em;
   letter-spacing: 0.03em;
   color: var(--main-color);
   background: #e5e5e5;
@@ -98,7 +98,7 @@ body {
   font-size: 44px;
   font-weight: 900;
   color: var(--background-light);
-  line-height: 1.36;
+  line-height: 1.36em;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0 0 40px 0;
@@ -114,13 +114,13 @@ body {
 }
 
 .order-button {
-  line-height: 1.875;
+  line-height: 1.875em;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .filter-button {
-  line-height: 1.625;
+  line-height: 1.625em;
   padding: 6px 22px;
   margin: 0 4px;
 }
@@ -167,7 +167,7 @@ body {
 
 .quality-explanation {
   color: var(--secondary-color);
-  line-height: 1.714;
+  line-height: 1.714em;
   margin: 0;
 }
 
@@ -221,14 +221,14 @@ body {
 
 .portfolio-element-title {
   font-size: 18px;
-  line-height: 2;
+  line-height: 2em;
   letter-spacing: 0.06em;
   margin: 20px 0 0 24px;
 }
 
 .portfolio-element-description {
   font-size: 16px;
-  line-height: 1.875;
+  line-height: 1.875em;
   color: var(--secondary-color);
   margin: 4px 0 20px 24px;
 }
