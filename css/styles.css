@@ -23,28 +23,32 @@ body {
   background-color: var(--background-light);
   padding: 0 215px;
   display: flex;
+  align-items: center;
   border: 1px #ececec;
   border-style: none none solid none;
 }
 
 .page-nav {
   display: flex;
-  flex-grow: 1;
+  align-items: center;
+  /* flex-grow: 1; */
 }
 
 .company-logo {
+  display: block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   text-decoration: unset;
   color: var(--main-color);
-  margin: 24px 93px 25px 0;
+  /* margin: 24px 93px 25px 0; */
 }
 
 .navigation-list,
 .qualities-list,
 .what-we-do-list,
 .team-list,
+.filter-list,
 .portfolio-list {
   list-style: none;
   padding: 0;
@@ -53,7 +57,11 @@ body {
 }
 
 .navigation-list {
-  margin: 32px 0;
+  margin-left: 93px;
+}
+
+.navigation-list > li + li {
+  margin-left: 50px;
 }
 
 .navigation-link {
@@ -61,7 +69,6 @@ body {
   letter-spacing: 0.02em;
   text-decoration: unset;
   color: var(--main-color);
-  margin-right: 50px;
 }
 
 .header-contact-link {
@@ -69,11 +76,11 @@ body {
   letter-spacing: 0.02em;
   text-decoration: unset;
   color: var(--secondary-color);
-  margin: 32px 0;
+  margin-left: auto;
 }
 
-.first {
-  margin-right: 50px;
+.header-contact-link + .header-contact-link {
+  margin-left: 50px;
 }
 
 /* Класс highlight работает только, если описан ниже классов, к которым применяется. 
@@ -122,7 +129,6 @@ body {
 .filter-button {
   line-height: 1.625em;
   padding: 6px 22px;
-  margin: 0 4px;
 }
 
 .order-button,
@@ -208,9 +214,19 @@ body {
   padding: 0 0 30px;
 }
 
-.filter {
-  text-align: center;
+.filter-list {
+  justify-content: center;
+  /* text-align: center; */
   margin: 0 0 20px;
+}
+
+.filter {
+  margin: 0;
+}
+
+.filter + .filter {
+  margin-left: 4px;
+  /* margin: 0 4px; */
 }
 
 .portfolio-element {
@@ -219,18 +235,25 @@ body {
   box-sizing: border-box;
 }
 
+.portfolio-element > a {
+  text-decoration: none;
+  color: unset;
+}
+
 .portfolio-element-title {
   font-size: 18px;
   line-height: 2em;
   letter-spacing: 0.06em;
-  margin: 20px 0 0 24px;
+  margin: 0;
+  padding: 20px 0 0 24px; /* made by padding to increase the clickable area */
 }
 
 .portfolio-element-description {
   font-size: 16px;
   line-height: 1.875em;
   color: var(--secondary-color);
-  margin: 4px 0 20px 24px;
+  margin: 0;
+  padding: 4px 0 20px 24px; /* made by padding to increase the clickable area */
 }
 
 .page-footer {
@@ -240,7 +263,6 @@ body {
 
 .page-footer .company-logo {
   color: var(--background-light);
-  display: block;
   margin: 0 0 20px 0;
 }
 
